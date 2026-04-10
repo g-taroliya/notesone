@@ -1,0 +1,125 @@
+/* MAIN FOOTER */
+.footer {
+  background: linear-gradient(135deg,#0a58b0 , #0b2347);
+  color: white;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+  /* opacity: .85; */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeInFooter 0.8s ease-in-out;
+}
+
+/* FADE IN ANIMATION */
+@keyframes fadeInFooter {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FOOTER CONTAINER */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+/* LEFT SECTION */
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo-img {
+  width: 180px;
+  height: 170px;
+  object-fit: contain;
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.2));
+  transition: 0.3s ease;
+}
+
+.footer-logo-img:hover {
+  transform: scale(1.05);
+}
+
+.footer-left p {
+  margin-top: 10px;
+  color: #d8eaff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* CENTER SECTION */
+.footer-center {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-center h3,
+.footer-right h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #aee6ff;
+  text-shadow: 0px 0px 5px rgba(0, 200, 255, 0.3);
+}
+
+.footer-center a,
+.footer-right a {
+  display: block;
+  margin: 8px 0;
+  color: #d7e9ff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 15px;
+  padding-left: 2px;
+}
+
+.footer-center a:hover,
+.footer-right a:hover {
+  color: #00c8ff;
+  transform: translateX(8px);
+}
+
+/* RIGHT SECTION */
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* FADE UP ANIMATION FOR COLUMNS */
+.fade-up {
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+    opacity: .6;
+  text-align: center;
+  margin-top: 35px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  color: #cfe6ff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}

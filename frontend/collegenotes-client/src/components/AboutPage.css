@@ -1,0 +1,39 @@
+/* AboutPage.css */
+
+.about-container {
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.features-section {
+  margin-top: 3rem;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.features-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 0;
+  border-bottom: 2px solid var(--primary-color, #007bff);
+  padding-bottom: 0.5rem;
+}
+
+.features-section ul {
+  list-style-type: '✔ ';
+  padding-left: 1.5rem;
+}
+
+.features-section li {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #555;
+}

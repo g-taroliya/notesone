@@ -1,0 +1,43 @@
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 25px auto;
+}
+
+.suggest-box {
+  position: absolute;
+  width: 100%;
+  /* background: rgb(41, 139, 187); */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border-radius: 10px;
+  margin-top: 6px;
+  z-index: 50;
+  animation: fadeDown 0.25s ease;
+  max-height: 250px;
+  overflow-y: auto;
+  opacity: 0.80;
+}
+
+.suggest-item {
+  padding: 12px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.suggest-item:hover {
+  background: #6ba9d8;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,132 @@
+/* ---- GLOBAL FIX ---- */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- NAVBAR ---- */
+.header-nav {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+}
+
+/* ---- LOGO ---- */
+.logo-img {
+  width: 180px;
+  height: 170px;
+  object-fit: contain;
+}
+
+/* ---- CENTER LINKS ---- */
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: 20px;
+}
+
+.header-links a {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.header-links a:hover {
+  color: #33b3e6;
+}
+
+/* ⭐ SPECIAL UPLOAD LINK */
+.upload-link {
+  color: #0a7cff;
+  font-weight: 700;
+}
+
+.upload-link:hover {
+  color: #33b3e6;
+}
+
+/* ---- RIGHT AUTH BUTTONS ---- */
+.header-auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth-btn {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Login Button */
+.auth-btn.login {
+  background: linear-gradient(135deg, #2367b4, #33b3e6);
+  color: white;
+  box-shadow: 0 4px 12px rgba(10, 124, 255, 0.35);
+}
+
+.auth-btn.login:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(10, 124, 255, 0.45);
+}
+
+/* Signup Button */
+.auth-btn.signup {
+  background: white;
+  border: 2px solid #2367b4;
+  color: #33b3e6;
+}
+
+.auth-btn.signup:hover {
+  background: #2367b4;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ⭐ Upload Button (Right Side) */
+.auth-btn.upload {
+  background: #0a7cff;
+  color: white;
+}
+
+.auth-btn.upload:hover {
+  background: #005ecc;
+  transform: translateY(-3px);
+}
+
+/* Dashboard */
+.auth-btn.dashboard {
+  background: #0a8f7f;
+  color: white;
+}
+
+.auth-btn.logout {
+  background: #dc3545;
+  color: white;
+}
+
+.user-email {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}

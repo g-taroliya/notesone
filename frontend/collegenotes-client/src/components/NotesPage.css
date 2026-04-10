@@ -1,0 +1,115 @@
+/* ===== PAGE ===== */
+.notes-container {
+  padding: 30px;
+  text-align: center;
+  background: #f8f9fb;
+}
+
+/* TITLE */
+.title {
+  color: #2d7be5;
+  margin-bottom: 20px;
+}
+
+/* 🔘 BUTTONS TOP */
+.category-buttons {
+  margin-bottom: 25px;
+}
+
+.category-buttons button {
+  margin: 8px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 1px solid #2d7be5;
+  background: #2d7be5;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-buttons button:hover {
+  background: #1b4291;
+}
+
+/* 📦 LIST */
+.notes-list {
+  width: 90%;
+  margin: auto;
+}
+
+/* 🧾 CARD */
+.note-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 25px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ✅ vertical center fix */
+  border: 1px solid #e5e5e5;
+  transition: 0.2s;
+}
+
+.note-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* LEFT */
+.note-info {
+  text-align: left;
+}
+
+.note-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.note-info p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* RIGHT */
+.note-actions {
+  display: flex;
+  align-items: center; /* ✅ button alignment fix */
+  gap: 10px;
+}
+
+/* 🔥 PERFECT BUTTON FIX */
+.view-btn,
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 110px;
+  height: 38px;
+
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  line-height: normal;
+  vertical-align: middle;
+  color: white;
+}
+
+/* COLORS */
+.view-btn {
+  background: #3e8ed0;
+}
+
+.download-btn {
+  background: #1e3a8a;
+}
+.note-actions a {
+  position: relative;
+  top: 0;        /* reset */
+}
+
+.note-actions a:last-child {
+  top: 1px;      /* 👈 download ko 1px niche lao */
+}

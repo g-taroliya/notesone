@@ -1,0 +1,181 @@
+/* OUTER CONTAINER */
+.signup-container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* TITLE */
+.signup-container h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #0a7cff;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* CARD BOX */
+.signup-card {
+  background: #ffffff;
+  padding: 30px;
+  width: 340px;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8f1ff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  animation: slideUp 0.6s ease;
+  transition: 0.3s;
+}
+
+.signup-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* INPUT FIELD */
+.signup-input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #cddff7;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+.signup-input:focus {
+  border-color: #0a7cff;
+  box-shadow: 0 0 0 3px rgba(0, 162, 255, 0.25);
+  outline: none;
+}
+
+/* SIGNUP BUTTON */
+.signup-btn {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #0a7cff, #4ac6ff);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.signup-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 132, 255, 0.4);
+}
+
+/* RESPONSE MESSAGE */
+.response-msg {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  animation: fadeIn 0.4s ease;
+}
+
+/* BOTTOM SMALL TEXT */
+.bottom-text {
+  text-align: center;
+  margin-top: 10px;
+  color: #444;
+  font-size: 14px;
+}
+
+.login-link {
+  background: none;
+  border: none;
+  color: #0a7cff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.login-link:hover {
+  color: #005fcc;
+  text-decoration: underline;
+}
+
+/* --------------------------------------------- */
+/* ⭐ EXTRA CLASSES for Labels + Validation ⭐ */
+/* --------------------------------------------- */
+
+.field-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: -5px;
+  margin-top: 5px;
+}
+
+.req {
+  color: red;
+  font-weight: bold;
+}
+
+/* ERROR RED BORDER */
+.input-error {
+  border: 2px solid red !important;
+  background-color: #ffecec !important;
+}
+
+/* SMALL ERROR MESSAGE */
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 5px;
+}
+
+/* MOBILE + COUNTRY CODE */
+.mobile-box {
+  display: flex;
+  gap: 8px;
+}
+
+.country-code {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #cddff7;
+  background: #f5faff;
+  font-size: 15px;
+  width: 80px;
+  outline: none;
+}
+
+.country-code:focus {
+  border-color: #0a7cff;
+  box-shadow: 0 0 0 3px rgba(0, 162, 255, 0.25);
+}
+
+.mobile-input {
+  flex: 1;
+}
+  
+/* --------------------------------------------- */
+/* ⭐ END EXTRA CLASSES ⭐ */
+/* --------------------------------------------- */
+
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}

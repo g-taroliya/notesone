@@ -1,0 +1,124 @@
+/* MAIN WRAPPER */
+.upload-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  border-radius: 18px;
+  border: 1px solid rgba(0, 140, 255, 0.25);
+
+  box-shadow: 0 8px 25px rgba(0, 140, 255, 0.20);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* TITLE */
+.upload-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #3db1f9;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* FORM */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+/* LABEL */
+.upload-form label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #3db1f9;
+}
+
+/* INPUT FIELDS */
+.upload-form input[type="text"],
+.upload-form input[type="file"] {
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1px solid rgba(0, 140, 255, 0.35);
+  background: rgba(255, 255, 255, 0.35);
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.upload-form input:hover,
+.upload-form input:focus {
+  border-color: #0a7cff;
+  box-shadow: 0 0 10px rgba(0, 124, 255, 0.4);
+}
+
+/* React Select styling fix */
+.css-13cymwt-control {
+  background: rgba(255, 255, 255, 0.35) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(0, 140, 255, 0.35) !important;
+}
+.css-t3ipsp-control {
+  background: rgba(255, 255, 255, 0.45) !important;
+  border-color: #0a7cff !important;
+}
+
+/* ERROR MESSAGE */
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* UPLOAD BUTTON */
+.upload-btn {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #2367b4, #33b3e6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 140, 255, 0.35);
+}
+
+.upload-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 140, 255, 0.40);
+}
+
+.upload-btn:active {
+  transform: scale(0.95);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .upload-container {
+    padding: 20px 15px;
+  }
+
+  .upload-title {
+    font-size: 26px;
+  }
+}

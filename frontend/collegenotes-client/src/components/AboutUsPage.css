@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #0d6efd;
+  --primary-color2: #1bb1ff;
+  --accent-color: #333;
+}
+
+.about-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 50px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 25px;
+}
+
+.about-card {
+  width: 70%;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 35px 40px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.about-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.brand-name {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.about-subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+.about-list {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.about-footer {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
